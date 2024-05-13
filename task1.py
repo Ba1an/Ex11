@@ -66,6 +66,7 @@ class AirConditioning:
             if self._temperature > 43:
                 self._temperature = 43
         return self._temperature
+
     def get_temperature(self):
         return self._temperature
 
@@ -74,7 +75,7 @@ class AirConditioning:
         Returns a string representation of the air conditioning system, indicating whether it is on or off and the current temperature setting.
         """
         if self._status:
-            return f'Кондиционер включен. Температурный режим: {self._temperature} градусов.' 
+            return f'Кондиционер включен. Температурный режим: {self._temperature} градусов.'
         return f'Кондиционер выключен.'
 
     def lower_temperature(self):
